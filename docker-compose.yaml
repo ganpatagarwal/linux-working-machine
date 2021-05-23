@@ -6,5 +6,7 @@ services:
     hostname: github-work
     environment:
       - PROCESS_NAME=github
+      - EMAIL=ganpat.agarwal@gmail.com
+      - USERNAME=Ganpat Agarwal
     volumes:
       - $GOPATH:/root/go:rw
