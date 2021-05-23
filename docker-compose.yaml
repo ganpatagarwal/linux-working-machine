@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  github:
+    image: ganpat/git
+    hostname: github-work
+    environment:
+      - PROCESS_NAME=github
+    volumes:
+      - $GOPATH:/root/go:rw
