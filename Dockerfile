@@ -11,4 +11,5 @@ RUN apt-get update \
         jq \
         vim
 COPY cmd.py /root/cmd.py
-CMD ["/root/cmd.py"]
+COPY startup.sh /root/startup.sh
+CMD ["/root/startup.sh"]
