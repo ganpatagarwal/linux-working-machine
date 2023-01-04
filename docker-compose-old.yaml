@@ -1,10 +1,9 @@
 version: "3.7"
 
 services:
-  app:
-    image: linux-local-image
-    hostname: linux-container
-    platform: "linux/amd64"
+  github:
+    image: ganpat/git
+    hostname: github-work
     environment:
       - PROCESS_NAME=github
       - EMAIL=ganpat.agarwal@gmail.com
